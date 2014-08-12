@@ -15,8 +15,8 @@
         <property name="password" type="string">
             <column name="password"/>
         </property>
-        <property name="sex" type="string">
-            <column name="sex"/>
+        <property name="gender" type="string">
+            <column name="gender"/>
         </property>
     </class>
 </hibernate-mapping>

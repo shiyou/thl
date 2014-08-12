@@ -18,10 +18,13 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
          <prop key="hibernate.show_sql">true</prop>
        </props>
     </property>
- 
+    
+ <!-- 映射文件 -->
     <property name="mappingResources">
 		<list>
           <value>hibernate/User.hbm.xml</value>
+          <value>hibernate/Atype.hbm.xml</value>
+          <value>hibernate/Article.hbm.xml</value>
 		</list>
     </property>	
  

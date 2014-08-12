@@ -12,4 +12,9 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao{
 		 getHibernateTemplate().save(user);
 	}
 
+	@Override
+	public User getUser(Long id) {
+		return (User) getHibernateTemplate().get(User.class, id);
+	}
+
 }

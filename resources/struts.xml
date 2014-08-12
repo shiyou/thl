@@ -11,8 +11,15 @@
 		<action name="addUserAction" class="userManagerAction" method="addUser" >
 		    <result name="success">User.jsp</result>
 		</action>
-	
 		
+		<action name="addArticleAction" class="articleAction" method="addArticle" >
+		</action>
+		<action name="test" class="articleAction" method="test" >
+		</action>
+		
+		<action name="index" class="indexAction" method="index" >
+			<result name="success">index.jsp</result>
+		</action>
 	</package>
 	
 </struts>

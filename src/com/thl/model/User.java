@@ -4,7 +4,7 @@ public class User {
 	private Long userId;
 	private String userName;
 	private String password;
-	private String sex;
+	private String gender;
 	
 
 	public Long getUserId() {
@@ -25,11 +25,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getSex() {
-		return sex;
+	public String getGender() {
+		return gender;
 	}
-	public void setSex(String sex) {
-		this.sex = sex;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
+
 	
 }

@@ -12,7 +12,7 @@
 <s:form action="addUserAction" >
   <s:textfield name="userName" label="UserName" value="" />
   <s:textarea name="password" label="Password" value="" cols="50" rows="5" />
-    <s:textarea name="sex" label="sex" value="" cols="50" rows="5" />
+    <s:textarea name="gender" label="gender" value="" cols="50" rows="5" />
   <s:submit />
 </s:form>
 </body>

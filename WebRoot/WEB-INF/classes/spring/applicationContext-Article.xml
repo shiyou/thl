@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+ 	<bean id="articleAction" class="com.thl.action.ArticleAction">
+		<property name="articleService" ref="articleService" />	
+		<property name="userService" ref="userService" />
+		<property name="typeService" ref="typeService" />
+	</bean>
+
+	<bean id="articleService" class="com.thl.service.impl.ArticleServiceImpl" >
+		<property name="articleDao" ref="articleDao" />
+	</bean>
+	
+   	<bean id="articleDao" class="com.thl.dao.impl.ArticleDaoImpl" >
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="typeService" class="com.thl.service.impl.AtypeServiceImpl">
+		<property name="atypeDao" ref="typeDao"></property>
+	</bean>
+	<bean id="typeDao" class="com.thl.dao.impl.AtypeDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+ 
+</beans>

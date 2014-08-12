@@ -5,5 +5,7 @@ import com.thl.model.User;
 public interface UserDao {
 	
 	public void addUser(User user);
+	
+	public User getUser(Long id);
 
 }
